@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinay - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts - Poppins (Import bold weights for better control) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="header">
+        <div class="container navbar-content">
+            <!-- Logo with gradient text -->
+            <h1 class="logo">
+                <a href="#home" class="nav-link" data-section="home">
+                   <span class="gradient-text-logo">Vinay Kumar Mishra</span>
+                </a>
+                </h1>
+            <nav class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link" data-section="home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                    <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                    <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+                </ul>
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation Menu (hidden by default) -->
+    <nav class="mobile-nav-menu">
+        <div class="close-btn"><i class="fas fa-times"></i></div>
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-nav-link" data-section="home">Home</a></li>
+            <li><a href="#about" class="mobile-nav-link" data-section="about">About</a></li>
+            <li><a href="#skills" class="mobile-nav-link" data-section="skills">Skills</a></li>
+            <li><a href="#projects" class="mobile-nav-link" data-section="projects">Projects</a></li>
+            <li><a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a></li>
+        </ul>
+    </nav>
+            <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="container hero-content">
+                <!-- Text on Left -->
+                <div class="hero-text">
+                    <h2>Hi, I'm <span class="gradient-text">Vinay Kumar Mishra</span></h2>
+                    <!-- Dynamic typing effect for roles -->
+                    <div class="hero-roles">
+                        <span id="role-typing-text" class="typing-text"></span><span class="cursor">|</span>
+                    </div>
+                    <p class="hero-description">Designing intelligent software with Python, TensorFlow, OpenCV, and deep learning. I build solutions, not just models.</p>
+                    <div class="hero-buttons">
+                        <a href="vinay.pdf" download class="btn btn-outline">
+                            Download Resume <i class="fas fa-download"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-primary smooth-scroll">Get In Touch</a>
+                    </div>
+                </div>
+                <!-- Image on Right -->
+                <div class="hero-image">
+                    <img src="vinay.jpg" alt="Vinay Kumar Mishra Profile" class="profile-pic">
+                </div>
+            </div>
+            <!-- Scroll to explore -->
+            <a href="#about" class="scroll-down-arrow smooth-scroll">
+                Scroll to explore <i class="fas fa-chevron-down"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section common-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content-grid">
+                    <div class="about-card journey-card">
+                        <h3 class="card-title purple-text">My Journey</h3>
+                        <p>I'm Vinay Kumar Mishra, a Computer Science(AI&ML) Engineering student at Haridwar University (2024–2028), passionate about building intelligent systems using AI, machine learning, and computer vision. I specialize in developing real-time, data-driven applications using tools like TensorFlow, OpenCV, and NLP frameworks. With a strong focus on problem-solving and a drive to solve real-world challenges, I aspire to become a A.I. Engineer — and go beyond that by continuously learning and creating tech-driven change.</p>
+                        <p>I love working in a team environment and also bring strong leadership capabilities to any project I’m part of. Outside the world of tech, I’m also an athlete, which helps me stay disciplined, focused, and goal-oriented in every aspect of life.</p>
+                    </div>
+                    <div class="about-right-column">
+                        <div class="about-card status-card">
+                            <h3 class="card-title blue-text">Current Status</h3>
+                            <div class="status-item">
+                                <i class="fas fa-briefcase status-icon"></i>
+                                <span>Exploring internship opportunities for 2027</span>
+                            </div>
+                        </div>
+                        <div class="about-card languages-card">
+                            <h3 class="card-title">Languages</h3>
+                            <div class="language-item">
+                                <span>English</span>
+                                <span class="language-tag">Proficient</span>
+                            </div>
+                            <div class="language-item">
+                                <span>Hindi</span>
+                                <span class="language-tag">Native</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section common-section">
+            <div class="container">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                            <video autoplay loop muted playsinline>
+                                <source src="Attendance.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Students Attendance</h3>
+                        <p>Student Attendance Project built with HTML, CSS, and JavaScript enables teachers to mark, track, and manage daily attendance. Features include responsive UI, searchable student list, attendance status toggles, date-wise records, exportable CSV, and basic validation. Lightweight, easy to deploy, and suitable for classroom or small-school use, improving accuracy and record-keeping.
+</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Vinay-KumarMishra/Attendance" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                             <video autoplay loop muted playsinline>
+                                <source src="vedio2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Recipe</h3>
+                        <p>A Recipe Project using HTML, CSS, and JavaScript displays dishes with ingredients, steps, and images. Users can search recipes, filter by category, and view detailed instructions. Responsive design ensures a clean interface. JavaScript handles dynamic rendering, interactive menus, and smooth navigation, making cooking guidance simple and user-friendly.
+</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Vinay-KumarMishra/Recipe" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                            <video autoplay loop muted playsinline>
+                                <source src="Car video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Car Booking Parking</h3>
+                        <p>A Car Booking & Parking Project using HTML, CSS, and JavaScript lets users reserve parking slots, check availability, and enter vehicle details. JavaScript manages slot status, timing, and booking validation. The interface is responsive and easy to use, helping organize parking spaces efficiently with real-time updates and a clean design.
+</p>
+                        <div class="project-links">
+                             <a href="https://github.com/Vinay-KumarMishra/Car-Booking-Parking" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                           <video autoplay loop muted playsinline>
+                                <source src="earth vinay.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Earth Moon Moving Around Sun</h3>
+                        <p>An Earth–Moon Orbit Simulation using HTML, CSS, and JavaScript visually shows Earth revolving around the Sun while the Moon orbits Earth. CSS animations create smooth circular motion, and JavaScript controls speed or interaction. The project is simple, educational, and demonstrates basic space mechanics through engaging visual animation.
+</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Vinay-KumarMishra/Earth-Moon-Moving-Around-Sun-Project" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                             <video autoplay loop muted playsinline>
+                                <source src="weather app.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Weather App</h3>
+                        <p>A Weather App using HTML, CSS, and JavaScript displays real-time temperature, humidity, wind speed, and conditions for any city. It uses an API to fetch live weather data. The interface is clean and responsive, with icons and backgrounds changing based on weather. JavaScript handles search, data updates, and user interactions.
+</p>
+                         <div class="project-links">
+                            <a href="https://github.com/Vinay-KumarMishra/Weather-App-Project" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-video-wrapper">
+                             <video autoplay loop muted playsinline>
+                                <source src="calculator.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3>Calculator</h3>
+                        <p>A Calculator Project using HTML, CSS, and JavaScript performs basic arithmetic operations like addition, subtraction, multiplication, and division. The layout is clean and responsive. JavaScript handles button clicks, input display, and calculations. It offers smooth functionality, error handling, and a user-friendly interface suitable for beginners learning web development.
+h</p>
+                         <div class="project-links">
+                            <a href="https://github.com/Vinay-KumarMishra/Calculator-Project" target="_blank" rel="noopener noreferrer" class="project-link-icon" title="View on GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section common-section">
+            <div class="container">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper skill-blue-gradient">
+                                <i class="fas fa-code skill-icon"></i>
+                            </div>
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>C</span><span>C++</span><span>Python</span><span>Java</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+                            <span>DSA</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper skill-green-solid">
+                                <i class="fas fa-globe skill-icon"></i>
+                            </div>
+                            <h3>Frameworks & Libraries</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>TensorFlow</span><span>Pytorch</span><span>Opencv</span><span>Hugging Face</span><span>Langchain</span><span>Flask</span><span>Streamlit</span><span>Pandas</span><span>Scikit-Learn</span>
+                                    <span>Numpy</span><span>Seaborn</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper skill-orange-red-gradient">
+                                <i class="fas fa-brain skill-icon"></i>
+                            </div>
+                            <h3>AI & Machine Learning</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Machine Learning</span><span>Deep Learning</span><span>NLP</span><span>LLM</span><span>BERT</span><span>GPT</span><span>LLaMA</span><span>RAG Agents</span>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-header">
+                            <div class="skill-icon-wrapper skill-red-pink-gradient">
+                                <i class="fas fa-users skill-icon"></i>
+                            </div>
+                            <h3>Soft Skills</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span>Team Management</span><span>Communication</span><span>Problem Solving</span><span>Creative Thinking</span><span>Innovation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section common-section">
+            <div class="container">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="contact-intro">Reach out to me through my social channels or send an email.</p>
+                <div class="contact-links">
+                    <a href="https://github.com/Vinay-KumarMishra" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/vinay-kumar-mishra-a70688330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://www.instagram.com/vinay_mishra6074?igsh=MTM0ZG0xZ3pwNGY5bg==" target="_blank" rel="noopener noreferrer" class="contact-link-card">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="mailto:vinaymishra3012@gmail.com" class="contact-link-card">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-top-text">
+                <p>Machine Learning Engineer & AI Enthusiast passionate about building intelligent systems that solve real-world problems and create meaningful impact.</p>
+            </div>
+            <div class="footer-bottom-row">
+                <p>@ Deployed with <span class="heart-emoji">❤️</span> by Vinay Kumar Mishra</p>
+                
+                <a href="https://github.com/Vinay-KumarMishra/Portfolio" target="_blank" rel="noopener noreferrer" class="github-link">
+                    <i class="fab fa-github"></i> Check this on Github
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed Bottom Social Links (globally visible) -->
+    <div class="fixed-bottom-social-links">
+        <a href="https://github.com/Vinay-KumarMishra" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/vinay-kumar-mishra-a70688330?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/vinay_mishra6074?igsh=MTM0ZG0xZ3pwNGY5bg==" target="_blank" rel="noopener noreferrer" title="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="mailto:vinaymishra3012@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
